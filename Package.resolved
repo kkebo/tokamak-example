@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "JavaScriptKit",
+        "repositoryURL": "https://github.com/kateinoigakukun/JavaScriptKit.git",
+        "state": {
+          "branch": "47f2bb1",
+          "revision": "47f2bb16576ba386a2c7c69c97b0fd44f470126f",
+          "version": null
+        }
+      },
+      {
+        "package": "Runtime",
+        "repositoryURL": "https://github.com/MaxDesiatov/Runtime.git",
+        "state": {
+          "branch": "wasi-build",
+          "revision": "a617ead8a125a97e69d6100e4d27922006e82e0a",
+          "version": null
+        }
+      },
+      {
+        "package": "Tokamak",
+        "repositoryURL": "https://github.com/swiftwasm/Tokamak.git",
+        "state": {
+          "branch": "b9ade79",
+          "revision": "b9ade79df1fcf9d9d82d63ec483fcf95faf0840e",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
