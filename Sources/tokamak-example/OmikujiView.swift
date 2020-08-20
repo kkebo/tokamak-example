@@ -1,4 +1,4 @@
-import TokamakDOM
+import TokamakShim
 
 struct OmikujiView {
     static let omikujis = [

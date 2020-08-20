@@ -1,11 +1,11 @@
-import JavaScriptKit
-import TokamakDOM
+import TokamakShim
 
-let document = JSObjectRef.global.document.object!
+struct OmikujiApp: App {
+    var body: some Scene {
+        WindowGroup("Counter Demo") {
+            OmikujiView()
+        }
+    }
+}
 
-let rootElement = document.createElement!("div").object!
-let renderer = DOMRenderer(OmikujiView(), rootElement)
-
-_ = document.body.object!.appendChild!(rootElement)
-
-withExtendedLifetime(renderer) {}
+OmikujiApp.main()
