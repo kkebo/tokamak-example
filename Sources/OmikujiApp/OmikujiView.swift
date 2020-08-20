@@ -8,12 +8,10 @@ struct OmikujiView {
         "小吉",
         "凶",
     ]
-    @State var omikuji: String?
     @State var history = [String]()
 
     func draw() {
-        self.omikuji = Self.omikujis.randomElement()
-        if let omikuji = self.omikuji {
+        if let omikuji = Self.omikujis.randomElement() {
             self.history.append(omikuji)
         }
     }
@@ -21,11 +19,11 @@ struct OmikujiView {
 
 extension OmikujiView: View {
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             VStack {
                 Button("おみくじを引く", action: self.draw)
                 HStack {
-                    if let omikuji = self.omikuji {
+                    if let omikuji = self.history.last {
                         Text(omikuji)
                             .font(.title)
                         if omikuji == "大吉" {
@@ -36,11 +34,11 @@ extension OmikujiView: View {
                 }
             }
             .padding()
-            ScrollView {
-                Text("履歴")
-                    .font(.headline)
-                List(self.history.reversed(), id: \.self) {
-                    Text($0)
+            List {
+                Section(header: Text("履歴").font(.headline)) {
+                    ForEach(self.history.reversed(), id: \.self) {
+                        Text($0)
+                    }
                 }
             }
             .padding()
