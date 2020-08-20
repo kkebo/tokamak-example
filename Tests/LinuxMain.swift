@@ -1,7 +1,7 @@
 import XCTest
 
-import tokamak_exampleTests
+import OmikujiAppTests
 
 var tests = [XCTestCaseEntry]()
-tests += tokamak_exampleTests.allTests()
+tests += OmikujiAppTests.allTests()
 XCTMain(tests)

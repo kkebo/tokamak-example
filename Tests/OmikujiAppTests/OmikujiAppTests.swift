@@ -1,12 +1,11 @@
 import XCTest
-@testable import tokamak_example
+@testable import OmikujiApp
 
-final class tokamak_exampleTests: XCTestCase {
+final class OmikujiAppTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(tokamak_example().text, "Hello, World!")
     }
 
     static var allTests = [
