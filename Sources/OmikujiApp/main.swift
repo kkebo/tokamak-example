@@ -4,7 +4,7 @@ struct OmikujiApp {}
 
 extension OmikujiApp: App {
     var body: some Scene {
-        WindowGroup("Counter Demo") {
+        WindowGroup("Omikuji") {
             OmikujiView()
         }
     }
